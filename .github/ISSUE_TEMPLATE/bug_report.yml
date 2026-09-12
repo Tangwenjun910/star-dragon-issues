@@ -1,4 +1,4 @@
-name: Bug report (English)
+name: Bug report
 description: Report a crash, an error, or a skill/mechanic that does not work as expected
 title: "[Bug] "
 labels:
@@ -7,6 +7,8 @@ body:
   - type: markdown
     attributes:
       value: |
+                [中文界面 / Chinese](https://github.com/Tangwenjun910/star-dragon-issues/issues/new?template=bug_report-zh.yml) - use this form if you prefer Chinese.
+
         Thanks for reporting. Please fill in as much as you can - the more complete the report, the faster it can be fixed.
 
         **If the game crashed, your latest log and crash report are required.** Without a log I usually cannot investigate.

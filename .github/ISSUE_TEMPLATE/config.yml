@@ -3,33 +3,33 @@ blank_issues_enabled: false
 contact_links:
 
   # ------------------------------------------------------------------
-  # For international players
+  # 切换语言 / Change language
   # ------------------------------------------------------------------
 
-  - name: READ ME FIRST - How to report a bug (English)
+  - name: 中文界面 - 提交 Bug
+    url: https://github.com/Tangwenjun910/star-dragon-issues/issues/new?template=bug_report-zh.yml
+    about: 中文 bug 报告表单 / Chinese bug report form
+
+  - name: 中文界面 - 问题与建议
+    url: https://github.com/Tangwenjun910/star-dragon-issues/issues/new?template=question-zh.yml
+    about: 中文提问与建议表单 / Chinese question and suggestion form
+
+  - name: 中文说明文档 / Chinese documentation
+    url: https://github.com/Tangwenjun910/star-dragon-issues/blob/main/README.zh.md
+    about: 中文反馈指南 / Chinese bug reporting guide
+
+  # ------------------------------------------------------------------
+  # Reference
+  # ------------------------------------------------------------------
+
+  - name: How to report a bug - READ ME FIRST
     url: https://github.com/Tangwenjun910/star-dragon-issues#readme
-    about: Which information to include (dependencies, logs, steps to reproduce)
+    about: Which information to include - dependencies, logs, steps to reproduce
 
   - name: Download the mod / read the documentation
     url: https://github.com/Tangwenjun910/star-dragon
     about: This repository is only for issue tracking. There is no source code or download here.
 
-  - name: Bug in Dragon Survival (upstream)
+  - name: Bug in Dragon Survival (upstream mod)
     url: https://github.com/DragonSurvivalTeam/DragonSurvival/issues
     about: If the problem is in the Dragon Survival base mod itself, please report it upstream.
-
-  # ------------------------------------------------------------------
-  # 中文玩家
-  # ------------------------------------------------------------------
-
-  - name: 必读先看 - 怎么提 bug（中文）
-    url: https://github.com/Tangwenjun910/star-dragon-issues#readme
-    about: 需要提供哪些信息：依赖版本、日志、复现步骤
-
-  - name: 下载模组 / 查看玩法说明
-    url: https://github.com/Tangwenjun910/star-dragon
-    about: 本仓库只有 Issue 追踪，没有源代码和下载。发布页请看这里。
-
-  - name: Dragon Survival 本体问题（上游）
-    url: https://github.com/DragonSurvivalTeam/DragonSurvival/issues
-    about: 如果问题出在龙之生存本体（而不是星龙附属）上，请去官方仓库反馈。
