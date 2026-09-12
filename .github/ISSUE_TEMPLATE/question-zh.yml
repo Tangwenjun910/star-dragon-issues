@@ -7,7 +7,7 @@ body:
   - type: markdown
     attributes:
       value: |
-                [English interface](https://github.com/Tangwenjun910/star-dragon-issues/issues/new?template=question.yml) - 如果你更习惯英文，请用这个表单。
+        [English interface](https://github.com/Tangwenjun910/star-dragon-issues/issues/new?template=question.yml) - 如果你更习惯英文，请用这个表单。
 
         这个模板用于**提问、提建议、反馈平衡性**。
 

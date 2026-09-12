@@ -7,7 +7,7 @@ body:
   - type: markdown
     attributes:
       value: |
-                [English interface](https://github.com/Tangwenjun910/star-dragon-issues/issues/new?template=bug_report.yml) - 如果你更习惯英文，请用这个表单。
+        [English interface](https://github.com/Tangwenjun910/star-dragon-issues/issues/new?template=bug_report.yml) - 如果你更习惯英文，请用这个表单。
 
         感谢反馈。请把下面的信息尽量填完整——信息越全，越容易定位问题。
 
@@ -25,7 +25,7 @@ body:
           required: true
         - label: 我装齐了必需依赖：Dragon Survival 2.0.53+ 和 GeckoLib 4.x
           required: true
-        - label: 我已阅读 [README](https://github.com/Tangwenjun910/star-dragon-issues#readme) 并会按下面要求提供信息
+        - label: 我已阅读 [README](https://github.com/Tangwenjun910/star-dragon-issues/blob/main/README.zh.md) 并会按下面要求提供信息
           required: true
 
   - type: input
