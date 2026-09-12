@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: 📥 下载模组 / 查看玩法说明
+    url: https://github.com/Tangwenjun910/star-dragon
+    about: 本仓库只有 Issue 追踪，没有源代码和下载。发布页请看这里。
+  - name: 🐉 Dragon Survival 本体问题
+    url: https://github.com/DragonSurvivalTeam/DragonSurvival/issues
+    about: 如果问题出在龙之生存本体（而不是星龙附属）上，请去官方仓库反馈。
+  - name: 💬 加群交流 / 快速提问
+    url: https://github.com/Tangwenjun910/star-dragon-issues/issues/new?template=question.yml
+    about: 不确定算不算 bug？用「问题与建议」模板提一个 Issue 也行。
