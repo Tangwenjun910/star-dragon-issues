@@ -1,0 +1,145 @@
+name: 提交 Bug（中文）
+description: 游戏崩溃、报错，或某个技能/机制不按预期工作
+title: "[Bug] "
+labels:
+  - bug
+body:
+  - type: markdown
+    attributes:
+      value: |
+        感谢反馈。请把下面的信息尽量填完整——信息越全，越容易定位问题。
+
+        **如果游戏崩溃了，最新日志（latest.log）和崩溃报告是必需的。** 没有日志我基本无法排查。
+
+  - type: checkboxes
+    id: precheck
+    attributes:
+      label: 提交前自查
+      description: 请先确认下面几项，能省掉很多来回沟通
+      options:
+        - label: 我已经搜索过现有 Issue，确认没有人报过同样的问题
+          required: true
+        - label: 我使用的是最新版 Star Dragon（如果用的不是最新版，请先升级再复现一次）
+          required: true
+        - label: 我装齐了必需依赖：Dragon Survival 2.0.53+ 和 GeckoLib 4.x
+          required: true
+        - label: 我已阅读 [README](https://github.com/Tangwenjun910/star-dragon-issues#readme) 并会按下面要求提供信息
+          required: true
+
+  - type: input
+    id: star_dragon_version
+    attributes:
+      label: Star Dragon 版本
+      description: 比如 2.0.4。可以在模组列表里看到，或看 jar 文件名
+      placeholder: "2.0.4"
+    validations:
+      required: true
+
+  - type: input
+    id: mc_version
+    attributes:
+      label: Minecraft 版本
+      placeholder: "1.21.1"
+    validations:
+      required: true
+
+  - type: input
+    id: neoforge_version
+    attributes:
+      label: NeoForge 版本
+      placeholder: "21.1.224"
+    validations:
+      required: true
+
+  - type: input
+    id: ds_version
+    attributes:
+      label: Dragon Survival（本体）版本
+      description: 必需依赖，请填实际安装的版本
+      placeholder: "2.0.53"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: singleplayer
+    attributes:
+      label: 联机还是单人？
+      options:
+        - 单人游戏
+        - 局域网联机
+        - 专用服务器（多人）
+        - 单人和联机都会出现
+    validations:
+      required: true
+
+  - type: textarea
+    id: what_happened
+    attributes:
+      label: 问题描述
+      description: 发生了什么？和你的预期有什么不同？
+      placeholder: 比如：使用「星辉冲击」技能后，龙的模型卡在原地不动，约 3 秒后恢复。
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: 复现步骤
+      description: 请写得具体到「照着做就能复现」
+      value: |
+        1. 
+        2. 
+        3. 
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: 期望的结果是什么？
+      placeholder: 比如：技能放完后应该立刻恢复行动。
+    validations:
+      required: false
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: 日志 / 崩溃报告
+      description: |
+        请把日志贴在这里，或上传文件后拖进来。
+        - 崩溃：`crash-reports/` 里最新的那个文件
+        - 非崩溃问题：`.minecraft/logs/latest.log`（建议上传到 https://mclo.gs 后贴链接）
+        **只写「崩了」不给日志的 Issue，会先要求补齐日志再处理。**
+      render: text
+      placeholder: 把日志内容或 mclo.gs / pastebin 链接贴在这里
+    validations:
+      required: true
+
+  - type: input
+    id: modlist
+    attributes:
+      label: 模组列表
+      description: 你一共装了多少个模组？如果用的是整合包，请写包名和版本
+      placeholder: "比如：总共 87 个模组，整合包 XXX v1.2"
+    validations:
+      required: false
+
+  - type: textarea
+    id: config
+    attributes:
+      label: 是否修改过配置？
+      description: 如果改过 `config` 里的设置，请说明改了什么（比如调过技能伤害、关闭过某个机制）
+    validations:
+      required: false
+
+  - type: textarea
+    id: extra
+    attributes:
+      label: 补充信息（可选）
+      description: |
+        任何可能有用的线索，比如：
+        - 截图 / 录屏
+        - 只装 Dragon Survival + Star Dragon 时问题还在吗？
+        - 试过哪些版本？从哪个版本开始出现的？
+    validations:
+      required: false

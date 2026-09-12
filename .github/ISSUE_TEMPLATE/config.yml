@@ -1,11 +1,35 @@
 blank_issues_enabled: false
+
 contact_links:
-  - name: 📥 下载模组 / 查看玩法说明
+
+  # ------------------------------------------------------------------
+  # For international players
+  # ------------------------------------------------------------------
+
+  - name: READ ME FIRST - How to report a bug (English)
+    url: https://github.com/Tangwenjun910/star-dragon-issues#readme
+    about: Which information to include (dependencies, logs, steps to reproduce)
+
+  - name: Download the mod / read the documentation
+    url: https://github.com/Tangwenjun910/star-dragon
+    about: This repository is only for issue tracking. There is no source code or download here.
+
+  - name: Bug in Dragon Survival (upstream)
+    url: https://github.com/DragonSurvivalTeam/DragonSurvival/issues
+    about: If the problem is in the Dragon Survival base mod itself, please report it upstream.
+
+  # ------------------------------------------------------------------
+  # 中文玩家
+  # ------------------------------------------------------------------
+
+  - name: 必读先看 - 怎么提 bug（中文）
+    url: https://github.com/Tangwenjun910/star-dragon-issues#readme
+    about: 需要提供哪些信息：依赖版本、日志、复现步骤
+
+  - name: 下载模组 / 查看玩法说明
     url: https://github.com/Tangwenjun910/star-dragon
     about: 本仓库只有 Issue 追踪，没有源代码和下载。发布页请看这里。
-  - name: 🐉 Dragon Survival 本体问题
+
+  - name: Dragon Survival 本体问题（上游）
     url: https://github.com/DragonSurvivalTeam/DragonSurvival/issues
     about: 如果问题出在龙之生存本体（而不是星龙附属）上，请去官方仓库反馈。
-  - name: 💬 加群交流 / 快速提问
-    url: https://github.com/Tangwenjun910/star-dragon-issues/issues/new?template=question.yml
-    about: 不确定算不算 bug？用「问题与建议」模板提一个 Issue 也行。

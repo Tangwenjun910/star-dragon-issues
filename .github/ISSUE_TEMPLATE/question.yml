@@ -1,42 +1,43 @@
-name: ❓ 问题与建议
-description: 玩法疑问、平衡性意见、功能请求 —— 不确定算不算 bug 就用这个
-title: "[问题] "
+name: Question / Suggestion (English)
+description: Gameplay questions, balance feedback, feature requests - use this if you are not sure it is a bug
+title: "[Question] "
 labels:
   - question
 body:
   - type: markdown
     attributes:
       value: |
-        这个模板用于**提问、提建议、反馈平衡性**。
-        如果你要报的是崩溃或功能异常，请改用 [Bug 模板](https://github.com/Tangwenjun910/star-dragon-issues/issues/new?template=bug_report.yml)。
+        Use this form for **questions, suggestions and balance feedback**.
+
+        If you want to report a crash or something not working, please use the [Bug report](https://github.com/Tangwenjun910/star-dragon-issues/issues/new?template=bug_report.yml) form instead.
 
   - type: checkboxes
     id: precheck
     attributes:
-      label: 提交前自查
+      label: Before submitting
       options:
-        - label: 我已经搜索过现有 Issue，确认没有人提过同样的问题或建议
+        - label: I have searched the existing issues and this has not been asked or suggested yet
           required: true
 
   - type: dropdown
     id: kind
     attributes:
-      label: 这是什么类型的反馈？
+      label: What kind of feedback is this?
       options:
-        - 玩法疑问（想搞清某个机制怎么用）
-        - 版本 / 兼容性疑问
-        - 平衡性建议（数值太高或太低）
-        - 新功能 / 新内容建议
-        - 文档或说明不清楚
-        - 其它
+        - Gameplay question (how a mechanic works)
+        - Version / compatibility question
+        - Balance suggestion (something feels too strong or too weak)
+        - New feature / content suggestion
+        - Documentation or description is unclear
+        - Something else
     validations:
       required: true
 
   - type: input
     id: star_dragon_version
     attributes:
-      label: Star Dragon 版本
-      description: 玩法类问题请填，方便我对照你那个版本的机制
+      label: Star Dragon version
+      description: Please fill this in for gameplay questions, so I can check the mechanics of your version
       placeholder: "2.0.4"
     validations:
       required: false
@@ -44,20 +45,20 @@ body:
   - type: textarea
     id: content
     attributes:
-      label: 具体内容
+      label: Details
       description: |
-        - 提问：把你已经试过的方法也写一下
-        - 建议：说明**为什么**这样改会更好，最好带上具体数值/场景
+        - Question: also mention what you have already tried
+        - Suggestion: explain **why** the change would be better, ideally with concrete numbers or a scenario
       placeholder: |
-        比如：星辉资源的回复速度在雨天是不是太慢了？
-        我试过在雨天挂机 10 分钟才回满，作为对比晴天只要 2 分钟……
+        Example: is the starlight regeneration rate in rain too slow?
+        I tried idling in the rain for 10 minutes and it still was not full, while in clear weather it only takes 2 minutes...
     validations:
       required: true
 
   - type: textarea
     id: attachments
     attributes:
-      label: 截图 / 录屏 / 日志（可选）
-      description: 有图会更直观，直接拖进来就行
+      label: Screenshots / video / logs (optional)
+      description: Images make things much clearer, just drag them in
     validations:
       required: false

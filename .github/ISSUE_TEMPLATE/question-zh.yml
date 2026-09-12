@@ -1,0 +1,64 @@
+name: 问题与建议（中文）
+description: 玩法疑问、平衡性意见、功能请求——不确定算不算 bug 就用这个
+title: "[问题] "
+labels:
+  - question
+body:
+  - type: markdown
+    attributes:
+      value: |
+        这个模板用于**提问、提建议、反馈平衡性**。
+
+        如果你要报的是崩溃或功能异常，请改用 [Bug 模板](https://github.com/Tangwenjun910/star-dragon-issues/issues/new?template=bug_report-zh.yml)。
+
+  - type: checkboxes
+    id: precheck
+    attributes:
+      label: 提交前自查
+      options:
+        - label: 我已经搜索过现有 Issue，确认没有人提过同样的问题或建议
+          required: true
+
+  - type: dropdown
+    id: kind
+    attributes:
+      label: 这是什么类型的反馈？
+      options:
+        - 玩法疑问（想搞清某个机制怎么用）
+        - 版本 / 兼容性疑问
+        - 平衡性建议（数值太高或太低）
+        - 新功能 / 新内容建议
+        - 文档或说明不清楚
+        - 其它
+    validations:
+      required: true
+
+  - type: input
+    id: star_dragon_version
+    attributes:
+      label: Star Dragon 版本
+      description: 玩法类问题请填，方便我对照你那个版本的机制
+      placeholder: "2.0.4"
+    validations:
+      required: false
+
+  - type: textarea
+    id: content
+    attributes:
+      label: 具体内容
+      description: |
+        - 提问：把你已经试过的方法也写一下
+        - 建议：说明**为什么**这样改会更好，最好带上具体数值或场景
+      placeholder: |
+        比如：星辉资源在雨天的回复速度是不是太慢了？
+        我试过在雨天挂机 10 分钟都没回满，而晴天只要 2 分钟……
+    validations:
+      required: true
+
+  - type: textarea
+    id: attachments
+    attributes:
+      label: 截图 / 录屏 / 日志（可选）
+      description: 有图会更直观，直接拖进来就行
+    validations:
+      required: false

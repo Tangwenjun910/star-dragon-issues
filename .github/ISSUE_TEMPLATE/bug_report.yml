@@ -1,5 +1,5 @@
-name: 🐛 提交 Bug
-description: 游戏崩溃、报错，或某个技能/机制不按预期工作
+name: Bug report (English)
+description: Report a crash, an error, or a skill/mechanic that does not work as expected
 title: "[Bug] "
 labels:
   - bug
@@ -7,29 +7,30 @@ body:
   - type: markdown
     attributes:
       value: |
-        感谢反馈！请把下面的信息尽量填完整 —— 信息越全，越容易定位问题。
-        如果游戏崩溃了，**最新日志（latest.log）和崩溃报告是必需的**，没有日志我基本无法排查。
+        Thanks for reporting. Please fill in as much as you can - the more complete the report, the faster it can be fixed.
+
+        **If the game crashed, your latest log and crash report are required.** Without a log I usually cannot investigate.
 
   - type: checkboxes
     id: precheck
     attributes:
-      label: 提交前自查
-      description: 请先确认下面几项，能省掉一半的来回沟通
+      label: Before submitting
+      description: Please confirm the following first - it saves a lot of back and forth.
       options:
-        - label: 我已经搜索过现有 Issue，确认没有人报过同样的问题
+        - label: I have searched the existing issues and this has not been reported yet
           required: true
-        - label: 我使用的是最新版 Star Dragon（如果用的不是最新版，请先升级再复现一次）
+        - label: I am using the latest Star Dragon version (if not, please update and try to reproduce again)
           required: true
-        - label: 我装齐了必需依赖：Dragon Survival 2.0.53+ 和 GeckoLib 4.x
+        - label: I have all required dependencies installed - Dragon Survival 2.0.53+ and GeckOLib 4.x
           required: true
-        - label: 我已阅读 [README](https://github.com/Tangwenjun910/star-dragon-issues#readme) 并会按下面要求提供信息
+        - label: I have read the [README](https://github.com/Tangwenjun910/star-dragon-issues#readme) and will provide the information requested below
           required: true
 
   - type: input
     id: star_dragon_version
     attributes:
-      label: Star Dragon 版本
-      description: 比如 2.0.4。可以在模组列表里看到，或看 jar 文件名
+      label: Star Dragon version
+      description: For example 2.0.4. You can see it in the mod list, or in the jar file name.
       placeholder: "2.0.4"
     validations:
       required: true
@@ -37,7 +38,7 @@ body:
   - type: input
     id: mc_version
     attributes:
-      label: Minecraft 版本
+      label: Minecraft version
       placeholder: "1.21.1"
     validations:
       required: true
@@ -45,7 +46,7 @@ body:
   - type: input
     id: neoforge_version
     attributes:
-      label: NeoForge 版本
+      label: NeoForge version
       placeholder: "21.1.224"
     validations:
       required: true
@@ -53,8 +54,8 @@ body:
   - type: input
     id: ds_version
     attributes:
-      label: Dragon Survival（本体）版本
-      description: 必需依赖，请填实际版本
+      label: Dragon Survival version (required dependency)
+      description: Please enter the actual version you have installed
       placeholder: "2.0.53"
     validations:
       required: true
@@ -62,29 +63,29 @@ body:
   - type: dropdown
     id: singleplayer
     attributes:
-      label: 联机还是单人？
+      label: Singleplayer or multiplayer?
       options:
-        - 单人游戏
-        - 局域网联机
-        - 专用服务器（多人）
-        - 单人和联机都会出现
+        - Singleplayer
+        - LAN multiplayer
+        - Dedicated server (multiplayer)
+        - Happens in both singleplayer and multiplayer
     validations:
       required: true
 
   - type: textarea
     id: what_happened
     attributes:
-      label: 问题描述
-      description: 发生了什么？和你的预期有什么不同？
-      placeholder: 比如：使用「星辉冲击」技能后，龙的模型卡在原地不动，约 3 秒后恢复。
+      label: What happened?
+      description: What happened, and how does it differ from what you expected?
+      placeholder: "Example: after using the Starlight Impact skill, the dragon model freezes in place for about 3 seconds."
     validations:
       required: true
 
   - type: textarea
     id: steps
     attributes:
-      label: 复现步骤
-      description: 请写得具体到"照着做就能复现"
+      label: Steps to reproduce
+      description: Be specific enough that someone can follow along and see the same thing
       value: |
         1. 
         2. 
@@ -95,50 +96,50 @@ body:
   - type: textarea
     id: expected
     attributes:
-      label: 期望的结果是什么？
-      placeholder: 比如：技能放完后应该立刻恢复行动。
+      label: What did you expect to happen?
+      placeholder: "Example: after casting the skill the dragon should be able to move immediately."
     validations:
       required: false
 
   - type: textarea
     id: logs
     attributes:
-      label: 日志 / 崩溃报告
+      label: Logs / crash report
       description: |
-        请把日志贴在这里（或上传文件后拖进来）。
-        - 崩溃：`crash-reports/` 里最新的那个文件
-        - 非崩溃问题：`.minecraft/logs/latest.log`（建议用 https://mclo.gs 上传后贴链接）
-        **只写"崩了"不给日志的 Issue 会被要求补齐后再处理。**
+        Paste your log here, or upload the file by dragging it into this box.
+        - Crash: the newest file in `crash-reports/`
+        - Non-crash issue: `.minecraft/logs/latest.log` (uploading to https://mclo.gs and pasting the link is preferred)
+        **Issues that just say "it crashed" without a log will be asked for one before they are looked at.**
       render: text
-      placeholder: 把日志内容或 mclo.gs / pastebin 链接贴在这里
+      placeholder: Paste the log content, or a mclo.gs / pastebin link
     validations:
       required: true
 
   - type: input
     id: modlist
     attributes:
-      label: 模组列表
-      description: 你一共装了多少个模组？如果是整合包请写包名和版本
-      placeholder: "比如：总共 87 个模组，整合包 XXX v1.2"
+      label: Mod list
+      description: How many mods in total do you have installed? If you use a modpack, name it and give its version.
+      placeholder: "Example: 87 mods total, modpack XXX v1.2"
     validations:
       required: false
 
   - type: textarea
     id: config
     attributes:
-      label: 是否修改过配置？
-      description: 如果改过 `config` 里的设置，请说明改了什么（比如调过技能伤害、关闭过某个机制）
+      label: Did you change any configuration?
+      description: If you edited the `config` settings, describe what you changed (for example skill damage, or turning a mechanic off).
     validations:
       required: false
 
   - type: textarea
     id: extra
     attributes:
-      label: 补充信息（可选）
+      label: Anything else? (optional)
       description: |
-        任何可能有用的线索，比如：
-        - 截图 / 录屏
-        - 关掉其它模组只装 Dragon Survival + Star Dragon 后，问题还在吗？
-        - 试过哪些版本？从哪个版本开始出现？
+        Any other useful clues, for example:
+        - Screenshots / video
+        - Does the problem still happen with only Dragon Survival + Star Dragon installed?
+        - Which versions have you tried? Which version did the problem start in?
     validations:
       required: false
