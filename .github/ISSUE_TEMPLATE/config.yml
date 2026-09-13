@@ -14,21 +14,21 @@ contact_links:
     url: https://github.com/Tangwenjun910/star-dragon-issues/issues/new?template=question-zh.yml
     about: 中文提问与建议表单 / Chinese question and suggestion form
 
-  - name: 中文说明文档 / Chinese documentation
-    url: https://github.com/Tangwenjun910/star-dragon-issues/blob/main/README.zh.md
-    about: 中文反馈指南 / Chinese bug reporting guide
+  # ------------------------------------------------------------------
+  # Download and reference
+  # ------------------------------------------------------------------
 
-  # ------------------------------------------------------------------
-  # Reference
-  # ------------------------------------------------------------------
+  - name: Download the mod / 下载模组
+    url: https://www.curseforge.com/minecraft/mc-mods/star-dragon-dragon-survival-addon
+    about: Always get the newest file from the Files tab of the CurseForge page. 请到 CurseForge 页面的 Files 标签下载最新文件。
 
   - name: How to report a bug - READ ME FIRST
     url: https://github.com/Tangwenjun910/star-dragon-issues#readme
     about: Which information to include - dependencies, logs, steps to reproduce
 
-  - name: Download the mod / read the documentation
-    url: https://github.com/Tangwenjun910/star-dragon
-    about: This repository is only for issue tracking. There is no source code or download here.
+  - name: 中文说明文档 / Chinese documentation
+    url: https://github.com/Tangwenjun910/star-dragon-issues/blob/main/README.zh.md
+    about: 中文反馈指南 / Chinese bug reporting guide
 
   - name: Bug in Dragon Survival (upstream mod)
     url: https://github.com/DragonSurvivalTeam/DragonSurvival/issues

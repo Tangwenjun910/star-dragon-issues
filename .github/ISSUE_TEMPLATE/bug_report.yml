@@ -21,9 +21,9 @@ body:
       options:
         - label: I have searched the existing issues and this has not been reported yet
           required: true
-        - label: I am using the latest Star Dragon version (if not, please update and try to reproduce again)
+        - label: I am using the newest Star Dragon file from the CurseForge Files tab
           required: true
-        - label: I have all required dependencies installed - Dragon Survival 2.0.53+ and GeckoLib 4.x
+        - label: I have Dragon Survival and GeckoLib installed - both are required, and the CurseForge page lists the compatible versions
           required: true
         - label: I have read the [README](https://github.com/Tangwenjun910/star-dragon-issues#readme) and will provide the information requested below
           required: true
@@ -32,8 +32,8 @@ body:
     id: star_dragon_version
     attributes:
       label: Star Dragon version
-      description: For example 2.0.4. You can see it in the mod list, or in the jar file name.
-      placeholder: "2.0.4"
+      description: The version you are running. Newest files are always published on the CurseForge page - please check there for updates.
+      placeholder: "the version you installed"
     validations:
       required: true
 
@@ -49,7 +49,7 @@ body:
     id: neoforge_version
     attributes:
       label: NeoForge version
-      placeholder: "21.1.224"
+      placeholder: "21.1"
     validations:
       required: true
 
@@ -57,8 +57,8 @@ body:
     id: ds_version
     attributes:
       label: Dragon Survival version (required dependency)
-      description: Please enter the actual version you have installed
-      placeholder: "2.0.53"
+      description: The version you have installed. This is a required dependency.
+      placeholder: "the version you installed"
     validations:
       required: true
 

@@ -39,8 +39,8 @@ body:
     id: star_dragon_version
     attributes:
       label: Star Dragon version
-      description: Please fill this in for gameplay questions, so I can check the mechanics of your version
-      placeholder: "2.0.4"
+      description: The version you are running. Newest files are always published on the CurseForge page.
+      placeholder: "the version you installed"
     validations:
       required: false
 

@@ -25,8 +25,8 @@ Open an issue using one of the forms below. The forms tell you exactly which inf
 
 This checklist saves a lot of back and forth:
 
-1. **Install the required dependencies.** `Dragon Survival 2.0.53+` and `GeckoLib 4.x` are required. The game will crash without them.
-2. **Check your versions.** The mod only supports Minecraft **1.21.1** with NeoForge 21.1+. Reports on unsupported versions cannot be handled.
+1. **Install the required dependencies.** Dragon Survival and GeckoLib are both required - the game will crash without them. The [CurseForge page](https://www.curseforge.com/minecraft/mc-mods/star-dragon-dragon-survival-addon) lists the compatible versions.
+2. **Check for updates.** Newest files are always published on the CurseForge Files tab. Please update to the newest one before reporting. The mod targets Minecraft **1.21.1** with NeoForge.
 3. **Test with a minimal setup.** Try reproducing with only Dragon Survival + Star Dragon installed. If the problem disappears, it is a mod conflict - please list the mods you use.
 4. **Try the latest version.** If you are not on the latest Star Dragon build, update first and try again.
 5. **Search existing issues.** Avoid duplicates.

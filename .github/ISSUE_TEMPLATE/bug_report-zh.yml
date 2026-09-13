@@ -21,9 +21,9 @@ body:
       options:
         - label: 我已经搜索过现有 Issue，确认没有人报过同样的问题
           required: true
-        - label: 我使用的是最新版 Star Dragon（如果用的不是最新版，请先升级再复现一次）
+        - label: 我用的是 CurseForge Files 里最新的 Star Dragon 文件
           required: true
-        - label: 我装齐了必需依赖：Dragon Survival 2.0.53+ 和 GeckoLib 4.x
+        - label: 我已装好 Dragon Survival 和 GeckoLib（两者都是必需依赖，兼容版本见 CurseForge 页面）
           required: true
         - label: 我已阅读 [README](https://github.com/Tangwenjun910/star-dragon-issues/blob/main/README.zh.md) 并会按下面要求提供信息
           required: true
@@ -32,8 +32,8 @@ body:
     id: star_dragon_version
     attributes:
       label: Star Dragon 版本
-      description: 比如 2.0.4。可以在模组列表里看到，或看 jar 文件名
-      placeholder: "2.0.4"
+      description: 你正在使用的版本。最新文件都会发布在 CurseForge 页面，请到那里确认更新。
+      placeholder: "你安装的版本"
     validations:
       required: true
 
@@ -49,7 +49,7 @@ body:
     id: neoforge_version
     attributes:
       label: NeoForge 版本
-      placeholder: "21.1.224"
+      placeholder: "21.1"
     validations:
       required: true
 
@@ -57,8 +57,8 @@ body:
     id: ds_version
     attributes:
       label: Dragon Survival（本体）版本
-      description: 必需依赖，请填实际安装的版本
-      placeholder: "2.0.53"
+      description: 你安装的版本，这是必需依赖
+      placeholder: "你安装的版本"
     validations:
       required: true
 

@@ -25,8 +25,8 @@
 
 这一步能省掉很多来回沟通：
 
-1. **装齐必需依赖**：`Dragon Survival 2.0.53+` 和 `GeckoLib 4.x` 是必需依赖，缺了会直接崩。
-2. **确认版本**：模组只支持 Minecraft **1.21.1** + NeoForge 21.1+，版本不匹配的问题无法处理。
+1. **装齐必需依赖**：Dragon Survival 和 GeckoLib 都是必需依赖，缺了会直接崩。兼容版本见 [CurseForge 页面](https://www.curseforge.com/minecraft/mc-mods/star-dragon-dragon-survival-addon)。
+2. **先确认更新**：最新文件都会发布在 CurseForge 的 Files 标签。提 bug 前请先更新到最新版。模组面向 Minecraft **1.21.1** + NeoForge。
 3. **最小环境复现**：先只装 Dragon Survival + Star Dragon 复现一次。如果问题消失了，说明是模组冲突，请列出你装的模组。
 4. **换最新版试试**：如果你用的不是最新版，先升级再复现一次。
 5. **搜一下已有 Issue**：避免重复提交。

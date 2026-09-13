@@ -39,8 +39,8 @@ body:
     id: star_dragon_version
     attributes:
       label: Star Dragon 版本
-      description: 玩法类问题请填，方便我对照你那个版本的机制
-      placeholder: "2.0.4"
+      description: 你正在使用的版本，方便我对照你那个版本的机制。最新文件都会发布在 CurseForge 页面。
+      placeholder: "你安装的版本"
     validations:
       required: false
 
